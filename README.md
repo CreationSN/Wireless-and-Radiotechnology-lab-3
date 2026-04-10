@@ -239,21 +239,6 @@ This system demonstrates real-world applications:
 - [Ultralytics YOLO](https://github.com/ultralytics/ultralytics)
 - [YOLOv8 Docs](https://docs.ultralytics.com/)
 
----
-
-## Lab Completion Status
-
-- [x] Code files created (`app.py`, `yolo_stream.py`)
-- [x] README with instructions
-- [x] Dependencies fixed (NumPy 1.x compatibility)
-- [x] Laptop A streaming successfully at 10.214.13.1:5000
-- [x] Correct IP address verified and updated
-- [ ] Screenshots captured (add images to `screenshots/` folder)
-- [ ] Test run with proof
-
----
-
-## Screenshots & Proof
 
 Screenshots are saved in the `screenshots/` folder:
 
