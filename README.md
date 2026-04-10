@@ -248,8 +248,41 @@ This system demonstrates real-world applications:
 - [x] Dependencies fixed (NumPy 1.x compatibility)
 - [x] Laptop A streaming successfully at 10.214.13.1:5000
 - [x] Correct IP address verified and updated
-- [ ] Test run with screenshots (in progress)
-- [ ] Person detection proof (to be added after running)
+- [ ] Screenshots captured (add images to `screenshots/` folder)
+- [ ] Test run with proof
+
+---
+
+## Screenshots & Proof
+
+Screenshots are saved in the `screenshots/` folder:
+
+| Screenshot | Description |
+|-----------|-------------|
+| `laptop_a_flask_stream.png` | Flask streaming server running on Laptop A |
+| `laptop_b_yolo_detection.png` | YOLO detection window showing bounding boxes |
+| `detected_objects_console.png` | Console output showing detected objects |
+| `person_detected_example.png` | Frame saved when person detected (bonus) |
+
+### Expected Output Examples:
+
+**Laptop A Console:**
+```
+ * Running on http://0.0.0.0:5000
+ * Running on http://10.214.13.1:5000
+Press CTRL+C to quit
+```
+
+**Laptop B Console:**
+```
+Stream opened. Running YOLO detection...
+Detected: person (Confidence: 0.95)
+✓ Person detected! Frame saved: detections/person_detected_01_20260410_120530.jpg
+Detected: cup (Confidence: 0.87)
+Detected: laptop (Confidence: 0.92)
+```
+
+---
 
 ---
 
