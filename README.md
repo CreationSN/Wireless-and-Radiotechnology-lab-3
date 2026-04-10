@@ -84,15 +84,15 @@ On Laptop A, open Command Prompt/PowerShell and run:
 ipconfig
 ```
 
-Look for the **IPv4 Address** under your WiFi network (usually looks like `192.168.x.x`)
+Look for the **IPv4 Address** under your WiFi network (usually looks like `192.168.x.x` or `10.x.x.x`)
 
-Example: `192.168.1.20`
+Example: `10.214.13.1` *(this is your actual IP)*
 
 ### Step 4: Update the Stream URL
 
 On Laptop B, edit `yolo_stream.py` and replace the IP address:
 ```python
-STREAM_URL = "http://192.168.1.20:5000/video_feed"  # Replace with your Laptop A IP
+STREAM_URL = "http://10.214.13.1:5000/video_feed"  # Replace with your Laptop A IP
 ```
 
 ---
@@ -159,10 +159,10 @@ You should see:
 
 | Role | Device | IP Address | Port | Model |
 |------|--------|-----------|------|-------|
-| Laptop A | Camera/Sender | 192.168.x.x | 5000 | app.py |
+| Laptop A | Camera/Sender | 10.214.13.1 | 5000 | app.py |
 | Laptop B | AI Node/Receiver | - | - | yolo_stream.py |
 
-*Note: Replace 192.168.x.x with actual IP from `ipconfig`*
+*Note: Actual IP used: 10.214.13.1 (obtained from `ipconfig`)*
 
 ---
 
@@ -245,7 +245,10 @@ This system demonstrates real-world applications:
 
 - [x] Code files created (`app.py`, `yolo_stream.py`)
 - [x] README with instructions
-- [ ] Test run with screenshots (to be completed during execution)
+- [x] Dependencies fixed (NumPy 1.x compatibility)
+- [x] Laptop A streaming successfully at 10.214.13.1:5000
+- [x] Correct IP address verified and updated
+- [ ] Test run with screenshots (in progress)
 - [ ] Person detection proof (to be added after running)
 
 ---

@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 # Replace with the actual IP address of Laptop A (Camera node)
-STREAM_URL = "http://192.168.1.20:5000/video_feed"
+STREAM_URL = "http://10.214.13.1:5000/video_feed"
 
 model = YOLO("yolov8n.pt")
 cap = cv2.VideoCapture(STREAM_URL)
